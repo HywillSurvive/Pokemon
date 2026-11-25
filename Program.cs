@@ -1,4 +1,6 @@
-﻿namespace Pokemon;
+﻿using System;
+
+namespace Pokemon;
 /*
     CONSIGNES
     1. Déclarer un tableau contenant les six Pokémon suivants :
@@ -16,6 +18,11 @@ class Program
 {
     static void Main(string[] args)
     {
-
+        string[] pokemon = { "Pikachu", "Dracaufeu", "Tortank", "Florizarre", "Ectoplasma", "Ronflex" };
+        for (int index = 0; index < pokemon.Length; index++)
+        {
+            Console.WriteLine($"{index+1} : {pokemon[index]}");
+        }
+        Console.WriteLine($"{pokemon.Length} pokemon aux total.");
     }
 }
